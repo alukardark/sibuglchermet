@@ -44,10 +44,51 @@ ul.list-style{
       content: '';
       width: 16px;
       height: 5px;
-      background: $decor-color;
+      background: $color;
       position: absolute;
       top: 12px;
       left: 0;
+    }
+  }
+}
+
+.header-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  h2{
+    font-size: 42px;
+    margin-bottom: 0;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  a{
+    font-weight: 500;
+    font-size: 16px;
+    text-align: right;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    text-decoration: none;
+    &:after{
+      content: '';
+      margin-left: 12px;
+      display: inline-block;
+      width: 46px;
+      min-width: 46px;
+      height: 46px;
+      border: 1px solid $color;
+      border-radius: 50%;
+      background: url(../img/arrow-r-blue.svg) center no-repeat;
+      transition: .3s ease-in-out transform;
+    }
+    &:hover{
+      color: $color-hover;
+      &:after{
+        transform: scale(0.95);
+      }
     }
   }
 }

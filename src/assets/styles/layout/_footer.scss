@@ -1,0 +1,32 @@
+.footer {
+  background: #1E2124;
+  &__soc {
+    display: flex;
+    flex-direction: column;
+    li{
+      a{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+    }
+    &--facebook{
+      background-image: url(../img/facebook.svg);
+    }
+    &--vk{
+      background-image: url(../img/vk.svg);
+    }
+    &--ok{
+      background-image: url(../img/ok.svg);
+    }
+    &--instagram{
+      background-image: url(../img/instagram.svg);
+    }
+  }
+  &__soc-title {
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
