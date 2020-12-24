@@ -6,9 +6,6 @@ import Inputmask from "inputmask";
 import Swiper from 'swiper';
 
 
-
-
-
 let inputsTel = document.querySelectorAll('input[type="tel"]');
 inputsTel.forEach(el => {
     Inputmask({"mask": "+7(999) 999-9999"}).mask(el);

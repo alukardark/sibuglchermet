@@ -1,0 +1,11 @@
+.banner {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 280px;
+  padding: 40px 0;
+  margin-bottom: 37px;
+  &--company {
+    background-image: url(../img/bg-company.jpg);
+  }
+}

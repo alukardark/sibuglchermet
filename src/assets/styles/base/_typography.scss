@@ -15,16 +15,18 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   //font-family: $font-add;
   font-weight: bold;
+
 }
 
 img {
   max-width: 100%;
   height: auto;
+  margin-bottom: 30px;
 }
 
 p {
   font: inherit;
-  margin: 0 0 30px;
+  margin: 0 0 20px;
   font-size: 16px;
   font-weight: normal;
   font-family: $font-add;
@@ -36,6 +38,7 @@ h1 {
   margin-bottom: 60px;
   font-weight: 500;
   text-transform: uppercase;
+  color: #fff;
 }
 
 h2 {
@@ -45,7 +48,7 @@ h2 {
 
 h3 {
   font-size: 24px;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 h4 {
