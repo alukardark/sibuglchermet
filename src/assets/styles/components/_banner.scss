@@ -5,7 +5,14 @@
   min-height: 280px;
   padding: 40px 0;
   margin-bottom: 37px;
+  background-image: url(../img/bg-company.jpg);
   &--company {
     background-image: url(../img/bg-company.jpg);
+  }
+  &--products{
+    background-image: url(../img/bg-produktsiya.jpg);
+  }
+  &--vacancies{
+    background-image: url(../img/bg-vacancies.jpg);
   }
 }

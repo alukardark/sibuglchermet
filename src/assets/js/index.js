@@ -1,15 +1,24 @@
 // import '../styles/styles.css'
 import '../styles/main.scss'
 
-import * as $ from 'jquery';
+window.$ = window.jQuery = require('jquery');
+
 import Inputmask from "inputmask";
 import Swiper from 'swiper';
+require("@fancyapps/fancybox");
+
+import './sidebarSticky.js';
+import './filesToUpload.js';
+
+
 
 
 let inputsTel = document.querySelectorAll('input[type="tel"]');
 inputsTel.forEach(el => {
-    Inputmask({"mask": "+7(999) 999-9999"}).mask(el);
+    Inputmask({"mask": "+7 (999) 999-9999"}).mask(el);
 });
+
+
 
 
 // setTimeout(function(){
@@ -60,3 +69,22 @@ var mainBanner = new Swiper('.main-slider .swiper-container', {
 $('.footer__up').click(function () {
     $("html, body").stop().animate({scrollTop: 0}, 800);
 });
+
+
+
+
+
+$('.header__menu-dropdown').hover(function(){
+   $(this).find('ul').stop().slideToggle(200);
+});
+
+
+
+
+
+
+
+
+
+
+

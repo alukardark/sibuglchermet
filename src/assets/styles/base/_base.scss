@@ -131,19 +131,19 @@ img::-moz-selection{
 }
 
 input::-webkit-input-placeholder {
-  color: #A0A0A0;
+  color: rgba(0, 0, 0, 0.7);
   transition: opacity 0.3s ease;
 }
 input::-moz-placeholder {
-  color: #A0A0A0;
+  color: rgba(0, 0, 0, 0.7);
   transition: opacity 0.3s ease;
 }
 input:-moz-placeholder {
-  color: #A0A0A0;
+  color: rgba(0, 0, 0, 0.7);
   transition: opacity 0.3s ease;
 }
 input:-ms-input-placeholder {
-  color: #A0A0A0;
+  color: rgba(0, 0, 0, 0.7);
   transition: opacity 0.3s ease;
 }
 input:focus::-webkit-input-placeholder {
@@ -159,6 +159,40 @@ input:focus:-moz-placeholder {
   transition: opacity 0.3s ease;
 }
 input:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+
+textarea::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.45);
+  transition: opacity 0.3s ease;
+}
+textarea::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.45);
+  transition: opacity 0.3s ease;
+}
+textarea:-moz-placeholder {
+  color: rgba(0, 0, 0, 0.45);
+  transition: opacity 0.3s ease;
+}
+textarea:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.45);
+  transition: opacity 0.3s ease;
+}
+textarea:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+textarea:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+textarea:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+textarea:focus:-ms-input-placeholder {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
