@@ -10,22 +10,13 @@ require("@fancyapps/fancybox");
 import './sidebarSticky.js';
 import './filesToUpload.js';
 
-
-
-
-let inputsTel = document.querySelectorAll('input[type="tel"]');
-inputsTel.forEach(el => {
-    Inputmask({"mask": "+7 (999) 999-9999"}).mask(el);
-});
-
-
-
-
 // setTimeout(function(){
-    // document.body.classList.add('active');
+// document.body.classList.add('active');
 // }, 100);
 
-
+document.querySelectorAll('input[type="tel"]').forEach(el => {
+    Inputmask({"mask": "+7 (999) 999-9999"}).mask(el);
+});
 
 var mainBanner = new Swiper('.main-slider .swiper-container', {
     loop: true,
@@ -70,10 +61,6 @@ $('.footer__up').click(function () {
     $("html, body").stop().animate({scrollTop: 0}, 800);
 });
 
-
-
-
-
 $('.header__menu-dropdown').hover(function(){
    $(this).find('ul').stop().slideToggle(200);
 });
@@ -81,8 +68,26 @@ $('.header__menu-dropdown').hover(function(){
 
 
 
+const anchors = document.querySelectorAll('a[href*="#"]');
 
+for (let anchor of anchors) {
 
+    if (anchor.classList.contains('anchor')) {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            console.log(anchor);
+
+            let blockID = anchor.getAttribute('href');
+            blockID = blockID.substring(blockID.lastIndexOf("#"));
+
+            document.querySelector('' + blockID).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            })
+        })
+    }
+};
 
 
 
