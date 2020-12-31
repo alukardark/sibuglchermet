@@ -198,3 +198,8 @@ textarea:focus:-ms-input-placeholder {
 }
 
 
+@media (max-width: $md) {
+    ol{
+      font-size: 14px;
+    }
+}

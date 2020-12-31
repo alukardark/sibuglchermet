@@ -126,3 +126,60 @@ ul.list-style, .vacancies__wrap ul, .studentam-i-vypusknikam__cont ul{
     background-position-x: -400%;
   }
 }
+
+
+@media (max-width: $lg) {
+  .header-row{
+    margin-bottom: 30px;
+    h2{
+      font-size: 32px;
+    }
+    a{
+      &:after{
+        width: 40px;
+        min-width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}
+@media (max-width: $md) {
+  ul.list-style, .vacancies__wrap ul, .studentam-i-vypusknikam__cont ul{
+    font-size: 14px;
+    line-height: 1.2;
+    li{
+      &:before{
+        top: 7px;
+      }
+    }
+  }
+  .header-row{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    h2{
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+    a{
+      color: $color;
+      &:after{
+        width: 20px;
+        min-width: 20px;
+        height: 20px;
+        background: url(../img/arrow-mini-blue.svg) center no-repeat;
+        margin-left: 7px;
+      }
+
+    }
+  }
+
+  .back-link{
+    font-size: 14px;
+    padding-left: 17px !important;
+    background: url(../img/arrow-l-mini-gray.svg) calc( 0% + 2px) 7px no-repeat;
+  }
+  .sticky {
+    position: static !important;
+  }
+}

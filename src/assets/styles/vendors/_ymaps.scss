@@ -13,3 +13,15 @@
     background: linear-gradient(180deg, #F3F3EF 28.59%, rgba(235, 245, 223, 0) 48.69%);
   }
 }
+.ymaps-2-1-78-places-pane{
+  z-index: 2211 !important;
+}
+
+
+@media (max-width: $md) {
+  .ymaps-2-1-78-inner-panes{
+    &:before{
+      background: linear-gradient(180deg, #F3F3EF 22.72%, rgba(235, 245, 223, 0) 35.4%);
+    }
+  }
+}

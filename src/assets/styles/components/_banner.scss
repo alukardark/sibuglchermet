@@ -9,10 +9,18 @@
   &--company {
     background-image: url(../img/bg-company.jpg);
   }
-  &--products{
+  &--products {
     background-image: url(../img/bg-produktsiya.jpg);
   }
-  &--company-people{
+  &--company-people {
     background-image: url(../img/bg-company-people.jpg);
+  }
+}
+
+@media (max-width: $md) {
+  .banner {
+    padding: 12px 0;
+    min-height: 175px;
+    margin-bottom: 20px;
   }
 }

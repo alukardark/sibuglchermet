@@ -12,7 +12,7 @@ const TerserWebpackPlugin = require('terser-webpack-plugin');
 const isDevelopment = process.env.NODE_ENV === 'development';
 const isProduction = !isDevelopment;
 
-const htmlWebpackTemplates = ['index', 'strategy', 'management', 'management-item', 'nashi-predpriyatiya', 'biznes-sistema', 'produktsiya', 'vacancies', 'vacancies-item', 'studentam-i-vypusknikam', 'obucheniye-i-razvitiye', 'sport', 'sotsialnyye-programmy'];
+const htmlWebpackTemplates = ['index', 'strategy', 'management', 'management-item', 'nashi-predpriyatiya', 'biznes-sistema', 'produktsiya', 'vacancies', 'vacancies-item', 'studentam-i-vypusknikam', 'obucheniye-i-razvitiye', 'sport', 'sotsialnyye-programmy', 'korporativnyye-programmy'];
 
 let htmlWebpackPlugins = htmlWebpackTemplates.map(name => {
     return new HtmlWebpackPlugin({
@@ -40,7 +40,7 @@ const optimization = () => {
     return config;
 };
 
-const filename = ext => isDevelopment ? `[name].${ext}` : `[name].[hash].${ext}`;
+const filename = ext => isDevelopment ? `[name].${ext}` : `[name].${ext}`;
 
 const cssLoaders = extra => {
     const loaders = [
@@ -70,7 +70,7 @@ module.exports = {
     //     path: path.resolve(__dirname, 'dist')
     // },
     output: {
-        filename: 'js/[name].[hash].js',
+        filename: 'js/[name].js',
         path: path.resolve(__dirname, 'dist')
     },
     resolve: {
@@ -103,7 +103,7 @@ module.exports = {
             ],
         }),
         new MiniCssExtractPlugin({
-            filename: "styles/[name].[hash].css",
+            filename: "styles/[name].css",
         })
     ].concat(htmlWebpackPlugins),
     module: {
