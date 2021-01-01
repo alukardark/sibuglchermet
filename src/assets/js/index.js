@@ -11,6 +11,7 @@ require("@fancyapps/fancybox");
 import './sidebarSticky.js';
 import './filesToUpload.js';
 import './menuDropdown.js';
+import './filter.js';
 
 
 // setTimeout(function(){
@@ -70,9 +71,6 @@ $('.header__menu-dropdown>a').click(function (e) {
 });
 
 
-
-
-
 $('.burger').click(function () {
     $('body').toggleClass('modal-open');
     $(this).toggleClass('active');
@@ -113,8 +111,9 @@ for (let anchor of anchors) {
             })
         })
     }
-};
+}
 
 
-
-
+$("img[title]").each(function () {
+    $(this).after($('<span class="img-desc">').html($(this).attr('title')));
+});

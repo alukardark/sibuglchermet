@@ -12,7 +12,7 @@ const TerserWebpackPlugin = require('terser-webpack-plugin');
 const isDevelopment = process.env.NODE_ENV === 'development';
 const isProduction = !isDevelopment;
 
-const htmlWebpackTemplates = ['index', 'strategy', 'management', 'management-item', 'nashi-predpriyatiya', 'biznes-sistema', 'produktsiya', 'vacancies', 'vacancies-item', 'studentam-i-vypusknikam', 'obucheniye-i-razvitiye', 'sport', 'sotsialnyye-programmy', 'korporativnyye-programmy'];
+const htmlWebpackTemplates = ['index', 'strategy', 'management', 'management-item', 'nashi-predpriyatiya', 'biznes-sistema', 'produktsiya', 'vacancies', 'vacancies-item', 'studentam-i-vypusknikam', 'obucheniye-i-razvitiye', 'sport', 'sotsialnyye-programmy', 'korporativnyye-programmy', 'press-relizy', 'press-relizy-item', 'nashi-istorii', 'media-materialy', 'kontakty', 'realizatsiya-neprofilnogo-imushchestva-i-tmts', 'okhrana-truda-i-promyshlennaya-bezopasnost'];
 
 let htmlWebpackPlugins = htmlWebpackTemplates.map(name => {
     return new HtmlWebpackPlugin({

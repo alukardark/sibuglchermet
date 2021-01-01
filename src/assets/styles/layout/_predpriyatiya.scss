@@ -213,14 +213,14 @@
         max-width: 590px;
       }
     }
-    &__row {
-      flex-direction: column;
-    }
   }
 }
 
 @media (max-width: $lg) {
   .predpriyatiya {
+    &__row {
+      flex-direction: column;
+    }
   }
 }
 
@@ -249,7 +249,6 @@
         height: 16px;
       }
     }
-
     &__tel {
       margin-bottom: 15px;
       &:before {

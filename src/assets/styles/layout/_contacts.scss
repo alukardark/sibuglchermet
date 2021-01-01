@@ -1,0 +1,150 @@
+.contacts {
+  &__contacts {
+    margin-top: 30px;
+    li {
+      position: relative;
+      padding-left: 37px;
+      a {
+        &:hover {
+          color: $color;
+        }
+      }
+    }
+  }
+  &__address {
+    font-family: $font-add;
+    font-weight: normal;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 30px;
+    &:before {
+      content: '';
+      width: 16px;
+      height: 20px;
+      background: url(../img/address.svg) center/contain no-repeat;
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      top: 3px;
+    }
+  }
+  &__tel {
+    a {
+      font-family: $font-add;
+      font-weight: normal;
+      font-size: 16px;
+      color: #000000;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 15px;
+    }
+    &:before {
+      content: '';
+      width: 16px;
+      height: 16px;
+      background: url(../img/tel.svg) center/contain no-repeat;
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      top: 3px;
+    }
+
+  }
+  &__mail {
+    a {
+      font-family: $font-add;
+      font-weight: normal;
+      font-size: 16px;
+      color: #000000;
+      display: block;
+      margin-bottom: 15px;
+    }
+    &:before {
+      content: '';
+      width: 16px;
+      height: 12px;
+      background: url(../img/mail.svg) center/contain no-repeat;
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      top: 7px;
+    }
+
+  }
+
+  &__row{
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__map{
+    width: 100%;
+    max-width: 900px;
+    margin-left: 35px;
+    height: 360px;
+  }
+
+}
+
+@media (max-width: $lg) {
+  .contacts {
+    &__row {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__map{
+      height: 320px;
+      margin-left: 0px;
+      margin-top: 30px;
+    }
+
+  }
+}
+
+@media (max-width: $md) {
+  .contacts {
+    &__contacts {
+      margin-top: 25px;
+      li {
+        padding-left: 23px;
+      }
+    }
+    &__address {
+      font-size: 14px;
+      margin-bottom: 15px;
+      &:before {
+        width: 13px;
+        height: 16px;
+      }
+    }
+    &__tel {
+      margin-bottom: 15px;
+      &:before {
+        width: 12px;
+        height: 13px;
+      }
+      a {
+        font-size: 14px;
+        margin-bottom: 5px;
+      }
+    }
+    &__mail {
+      &:before {
+        width: 12px;
+        height: 10px;
+      }
+      a {
+        font-size: 14px;
+      }
+    }
+
+    &__row{
+      margin-bottom: 50px;
+    }
+    &__map{
+      height: 200px;
+      margin-top: 10px;
+    }
+  }
+}

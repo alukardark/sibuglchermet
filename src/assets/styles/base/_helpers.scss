@@ -30,7 +30,7 @@
   position: relative;
   z-index: 101;
 }
-ul.list-style, .vacancies__wrap ul, .studentam-i-vypusknikam__cont ul{
+ul.list-style, .vacancies__wrap ul, .studentam-i-vypusknikam__cont ul, .news ul{
   font-family: $font-add;
   font-weight: normal;
   font-size: 16px;
@@ -107,7 +107,30 @@ ul.list-style, .vacancies__wrap ul, .studentam-i-vypusknikam__cont ul{
     }
   }
 }
+.img-desc{
+  margin-top: -25px;
+  margin-bottom: 30px;
+  display: block;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.7);
+}
 
+.link{
+  display: inline-block;
+  position: relative;
+  padding-right: 22px;
+  border-bottom: 2px solid #006BCA;
+  text-decoration: none;
+  background: url(../img/arrow-r-blue.svg) calc(100% - 2px) 7px no-repeat;
+  padding-bottom: 2px;
+  transition: .2s ease-in-out padding-right, .2s ease-in-out opacity;
+  &:hover{
+    padding-right: 26px;
+    opacity: .75;
+  }
+}
 
 @-webkit-keyframes tape {
   0% {
@@ -144,7 +167,7 @@ ul.list-style, .vacancies__wrap ul, .studentam-i-vypusknikam__cont ul{
   }
 }
 @media (max-width: $md) {
-  ul.list-style, .vacancies__wrap ul, .studentam-i-vypusknikam__cont ul{
+  ul.list-style, .vacancies__wrap ul, .studentam-i-vypusknikam__cont ul, .news ul{
     font-size: 14px;
     line-height: 1.2;
     li{
@@ -181,5 +204,16 @@ ul.list-style, .vacancies__wrap ul, .studentam-i-vypusknikam__cont ul{
   }
   .sticky {
     position: static !important;
+  }
+  .img-desc{
+    margin-top: -18px;
+    margin-bottom: 18px;
+    font-size: 12px;
+  }
+
+  .link{
+    font-size: 14px;
+    background-size: 6px 10px;
+    padding-right: 17px !important;
   }
 }
