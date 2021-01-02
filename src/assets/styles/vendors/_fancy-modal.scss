@@ -170,7 +170,7 @@
       color: rgba(0, 0, 0, 0.7);
     }
   }
-  &__file-list {
+  .file-list {
     margin-bottom: 15px;
     ul {
       display: flex;
@@ -196,7 +196,7 @@
     font-size: 14px;
     color: rgba(0, 0, 0, 0.7);
   }
-  &__file-error {
+  .file-error {
     color: #B40600;
     margin: 10px 0;
     font-family: $font-add;
@@ -277,11 +277,7 @@
   transition-duration: .2s;
 }
 
-@media (max-width: $xl) {
-  .fancy-modal {
 
-  }
-}
 
 @media (max-width: $lg) {
   .fancy-modal {

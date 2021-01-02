@@ -180,6 +180,62 @@
             </div>
 
 
+            <div class="contacts__form">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <h2>Написать нам</h2>
+                            <form id="fileupload" action="#" method="GET" enctype="multipart/form-data">
+
+                                <div class="contacts__form-row">
+                                    <div class="contacts__form-col">
+                                        <input type="text" placeholder="ФИО">
+                                        <input type="text" placeholder="E-mail">
+                                        <label>
+                                            <span>Телефон</span>
+                                            <input type="tel" placeholder="+7 (999) 999-9999">
+                                        </label>
+                                    </div>
+
+                                    <textarea name="" placeholder="Сообщение"></textarea>
+
+                                </div>
+
+                                <div class="contacts__form-col">
+                                <div class="contacts__file-upload">
+                                    <h4>Прикрепить файл</h4>
+                                    <div class="file-list"></div>
+                                    <div class="contacts__file-wrap">
+                                        <label>
+                                            <input type="file" name="file" id="file" multiple
+                                                   accept="application/msword, text/plain, application/pdf, image/jpeg, image/png">
+                                            <div class="contacts__file-btn">Прикрепить</div>
+                                        </label>
+                                        <div class="contacts__file-formats">
+                                            (Форматы: pdf, docx, jpg <br> Общий размер: не больше 30 Мб )
+                                        </div>
+                                    </div>
+
+                                    <div class="file-error"></div>
+
+                                </div>
+
+
+                                <input type="submit" value="Отправить резюме">
+                                <div class="personal-data">
+                                    Нажимая на кнопку, Вы даете согласие на <a href="/personalnye-dannye/"
+                                                                               target="_blank">обработку персональных
+                                    данных</a>
+                                </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
 
     </div>
@@ -307,9 +363,6 @@
         }
 
 
-
-
-
         var myMap2 = new ymaps.Map('map2', {
                 center: [59.917192, 30.311715],
                 zoom: 16,
@@ -346,9 +399,6 @@
         if (isMobile) {
             myMap2.behaviors.disable('drag');
         }
-
-
-
 
 
         var myMap3 = new ymaps.Map('map3', {
