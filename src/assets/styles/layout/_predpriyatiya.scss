@@ -1,3 +1,9 @@
+.banner--predpriyatiya{
+  .banner {
+    height: 600px;
+    position: relative;
+  }
+}
 .predpriyatiya {
   padding-bottom: 25px;
   h1 {
@@ -5,10 +11,6 @@
     position: relative;
     display: inline-block;
     z-index: 2;
-  }
-  .banner {
-    height: 600px;
-    position: relative;
   }
   .breadcrumbs {
     position: relative;
@@ -225,6 +227,11 @@
 }
 
 @media (max-width: $md) {
+  .banner--predpriyatiya{
+    .banner {
+      height: 700px;
+    }
+  }
   .predpriyatiya {
     &__marker {
       font-size: 14px;
@@ -232,9 +239,8 @@
         padding: 9px;
       }
     }
-    .banner {
-      height: 700px;
-    }
+
+
     &__contacts {
       margin-top: 25px;
       li {
